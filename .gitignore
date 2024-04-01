@@ -114,6 +114,9 @@ dist
 # For Build TS
 /js_dist/
 
+# UnitTest
+*_test.js
+
 # PM2 eco system
 /pm2-eco-example.js
 
