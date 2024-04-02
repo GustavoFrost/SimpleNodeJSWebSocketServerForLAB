@@ -42,6 +42,9 @@ async function main(){
   };
   connection.onmessage = (event)=>{
     console.log("message from server : " + event.data);
+    try {
+      connection.close();
+    } catch (error) {}
   };
   connection.onclose = (event)=>{
     console.log("connection closed : " +  event);
